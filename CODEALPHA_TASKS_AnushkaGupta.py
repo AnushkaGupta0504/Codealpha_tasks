@@ -46,3 +46,26 @@ if '_' not in word_display:
     print("🎉 Congratulations! You guessed the word:", chosen_word)
 else:
     print("💀 Game Over! The word was:", chosen_word)
+
+def squareWall(s):
+    """
+    Print a square wall of size s using nested loops.
+    Args:
+        s (int): Size of the square wall
+    """
+    for i in range(s):  # Outer loop for rows
+        for j in range(s):  # Inner loop for columns
+            print('*', end='')  # Print asterisk without newline
+        print()  # Print newline after each row
+
+# Test the function with example
+if __name__ == "__main__":
+    print("\nSquare Wall Examples:")
+    print("Size 5:")
+    squareWall(5)
+    
+    print("\nSize 3:")
+    squareWall(3)
+    
+    print("\nSize 1:")
+    squareWall(1)
